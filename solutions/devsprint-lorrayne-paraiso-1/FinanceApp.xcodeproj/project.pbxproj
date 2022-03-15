@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BEE602727E0C2E90012CA6C /* ActivityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE602627E0C2E90012CA6C /* ActivityCellModel.swift */; };
+		6BEE602B27E0C3ED0012CA6C /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE602A27E0C3ED0012CA6C /* ActivityTableViewCell.swift */; };
+		6BEE603027E0C63C0012CA6C /* StringRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE602F27E0C63C0012CA6C /* StringRequest.swift */; };
 		98584A6D277E32C30028DBEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98584A6C277E32C30028DBEA /* AppDelegate.swift */; };
 		98584A6F277E32C30028DBEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98584A6E277E32C30028DBEA /* SceneDelegate.swift */; };
 		98584A76277E32C50028DBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98584A75277E32C50028DBEA /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BEE602627E0C2E90012CA6C /* ActivityCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCellModel.swift; sourceTree = "<group>"; };
+		6BEE602A27E0C3ED0012CA6C /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		6BEE602F27E0C63C0012CA6C /* StringRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRequest.swift; sourceTree = "<group>"; };
 		98584A69277E32C30028DBEA /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98584A6C277E32C30028DBEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98584A6E277E32C30028DBEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BEE602827E0C3A20012CA6C /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE602927E0C3B90012CA6C /* Cells */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		6BEE602927E0C3B90012CA6C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE602A27E0C3ED0012CA6C /* ActivityTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6BEE602E27E0C63C0012CA6C /* String */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE602F27E0C63C0012CA6C /* StringRequest.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		98584A60277E32C30028DBEA = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +161,7 @@
 		98584A6B277E32C30028DBEA /* FinanceApp */ = {
 			isa = PBXGroup;
 			children = (
+				6BEE602E27E0C63C0012CA6C /* String */,
 				98584A9D277E351B0028DBEA /* Resources */,
 				98584A9C277E350D0028DBEA /* AppDelegate */,
 				98584A9E277E35700028DBEA /* Screens */,
@@ -196,6 +227,7 @@
 		98584A9F277E35780028DBEA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6BEE602827E0C3A20012CA6C /* Activity */,
 				98584AA6277E35F10028DBEA /* HomeView.swift */,
 				98584AA4277E35E90028DBEA /* HomeViewController.swift */,
 			);
@@ -214,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				989627DC27ADC2BC0009A07F /* HomeModel.swift */,
+				6BEE602627E0C2E90012CA6C /* ActivityCellModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,11 +454,13 @@
 				98584B10277E605F0028DBEA /* ActivityDetailsViewController.swift in Sources */,
 				98584B20277E60740028DBEA /* ContactListViewController.swift in Sources */,
 				98584AF4277E50430028DBEA /* ConfirmationViewController.swift in Sources */,
+				6BEE602B27E0C3ED0012CA6C /* ActivityTableViewCell.swift in Sources */,
 				98C8A4D927C8152200A630ED /* String+Extensions.swift in Sources */,
 				989627DD27ADC2BC0009A07F /* HomeModel.swift in Sources */,
 				98584AE8277E50430028DBEA /* TransfersViewController.swift in Sources */,
 				98584B14277E605F0028DBEA /* ActivityDetailsView.swift in Sources */,
 				DA0E3FE727D7916800909410 /* TabBarViewController.swift in Sources */,
+				6BEE602727E0C2E90012CA6C /* ActivityCellModel.swift in Sources */,
 				98584AE7277E50430028DBEA /* TransfersView.swift in Sources */,
 				98C8A4DB27C815C000A630ED /* UITableViewCell+Extensions.swift in Sources */,
 				98584AF3277E50430028DBEA /* ConfirmationView.swift in Sources */,
@@ -437,6 +472,7 @@
 				989627E027ADC2F60009A07F /* DebugViewController.swift in Sources */,
 				98584AA5277E35E90028DBEA /* HomeViewController.swift in Sources */,
 				98584AED277E50430028DBEA /* UserProfileView.swift in Sources */,
+				6BEE603027E0C63C0012CA6C /* StringRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
